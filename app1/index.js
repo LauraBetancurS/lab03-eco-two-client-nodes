@@ -29,6 +29,13 @@ const submitPlayer = () => {
     move: move,
   };
 
+  // Show an alert confirming the player's choice
+  alert(`${playerName} has selected ${move}!`);
+
+  // Display a message confirming the choice below the form
+  document.getElementById("confirmation-message").innerHTML = 
+    `<p style="color: #ff69b4; font-weight: bold;">${playerName} has selected ${move}!</p>`;
+
   // Send the player's data to the server using a POST request
   fetch("http://localhost:5050/users", {
     method: "POST", // Specify that this is a POST request (to send data)
@@ -43,4 +50,4 @@ const submitPlayer = () => {
 };
 
 // Add a click event listener to the submit button
-document.getElementById("submit-button").addEventListener("click", submitPlayer, fetchPlayers);
+document.getElementById("submit-button").addEventListener("click", submitPlayer);
