@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #eac7cb;
+  background-size: cover;
+  color: #4a4a4a;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff1493;
+  text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.3);
+}
+
+#game-status, #player-choices, #game-result {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 15px;
+  max-width: 450px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff1493;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #ff69b4;
+  text-shadow: 1px 1px 3px rgba(255, 105, 180, 0.3);
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+button {
+  background: #ff1493;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #c71585;
+  transform: scale(1.1);
+}
